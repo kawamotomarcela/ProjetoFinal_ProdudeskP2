@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BGHV9HYq8/M=",
+  "dgSpecHash": "qdTOIbqhTZc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\ProjetoAPI.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\ProjetoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

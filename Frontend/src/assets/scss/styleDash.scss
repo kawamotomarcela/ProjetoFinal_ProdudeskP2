@@ -79,7 +79,12 @@
 
 .table-responsive {
   .btn-edit {
-    margin-left: -4rem;
+    @media (min-width: 992px) {
+      margin-left: -4rem;
+    }
+    @media (max-width: 991.98px) { 
+      margin-left: 0;
+    }
     background-color: #007bff;
     color: #fff;
     border-color: #007bff;

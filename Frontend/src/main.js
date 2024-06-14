@@ -5,6 +5,8 @@ import router from './router';
 import 'boxicons';
 import 'bootstrap';
 import '@/assets/scss/main.scss';
+import 'boxicons/css/boxicons.min.css';
+
 
 const app = createApp(App);
 

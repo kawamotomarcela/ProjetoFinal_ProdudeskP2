@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk_final\\backend\\projetoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk_final\\backend\\projetoapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk_final\\backend\\projetoapi\\endpoints\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\endpoints\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\endpoints\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk_final\\backend\\projetoapi\\endpoints\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\endpoints\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\endpoints\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk_final\\backend\\projetoapi\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -36,24 +36,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Models\\Produto.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Models\\Produto.cs",
               "RelativeDocumentMoniker": "ProjetoAPI\\Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Models\\Produto.cs",
               "RelativeToolTip": "ProjetoAPI\\Models\\Produto.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAmwB4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:36:47.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T16:36:47.358Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\appsettings.json",
               "RelativeDocumentMoniker": "ProjetoAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\appsettings.json",
               "RelativeToolTip": "ProjetoAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-06-03T19:59:38.583Z",
               "EditorCaption": ""
@@ -62,9 +61,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Categorias.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Endpoints\\Categorias.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Endpoints\\Categorias.cs",
               "RelativeDocumentMoniker": "ProjetoAPI\\Endpoints\\Categorias.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Endpoints\\Categorias.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Endpoints\\Categorias.cs",
               "RelativeToolTip": "ProjetoAPI\\Endpoints\\Categorias.cs",
               "ViewState": "AQIAAG0AAAAAAAAAAAAgwIsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -74,9 +73,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Produtos.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Endpoints\\Produtos.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Endpoints\\Produtos.cs",
               "RelativeDocumentMoniker": "ProjetoAPI\\Endpoints\\Produtos.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Endpoints\\Produtos.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Endpoints\\Produtos.cs",
               "RelativeToolTip": "ProjetoAPI\\Endpoints\\Produtos.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAJEAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -86,9 +85,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ListaPaginada.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Utils\\ListaPaginada.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Utils\\ListaPaginada.cs",
               "RelativeDocumentMoniker": "ProjetoAPI\\Utils\\ListaPaginada.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk_Final\\backend\\ProjetoAPI\\Utils\\ListaPaginada.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Utils\\ListaPaginada.cs",
               "RelativeToolTip": "ProjetoAPI\\Utils\\ListaPaginada.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

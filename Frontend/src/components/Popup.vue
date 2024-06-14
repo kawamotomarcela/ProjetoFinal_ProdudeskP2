@@ -1,3 +1,42 @@
+<script setup>
+import { ref } from "vue";
+import productService from "../services/categoryService";
+import categoryService from "../services/categoryService";
+
+const props = defineProps({
+  popupType: String,
+  fileName: String,
+  uploadSuccessProduct: Boolean,
+  uploadSuccessCategory: Boolean,
+  uploadSuccess: Boolean,
+  newProduct: Object,
+  newCategory: Object,
+  categories: Array,
+});
+
+const emit = defineEmits(["closePopup", "closeAddCategoryPopup", "closeAddProductPopup", "updateFileName", "uploadFile", "addCategory", "addProduct"]);
+const closePopup = () => {
+  emit("closePopup");
+};
+
+const updateFileName = (event) => {
+  emit("updateFileName", event);
+};
+
+const uploadFile = () => {
+  emit("uploadFile");
+};
+
+const addCategory = () => {
+  emit("addCategory");
+};
+
+const addProduct = () => {
+  emit("addProduct");
+};
+
+</script>
+
 <template>
   <div v-if="popupType" class="popup">
     <div class="popup-content">
@@ -74,42 +113,5 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-import productService from "../services/categoryService";
-import categoryService from "../services/categoryService";
 
-const props = defineProps({
-  popupType: String,
-  fileName: String,
-  uploadSuccessProduct: Boolean,
-  uploadSuccessCategory: Boolean,
-  uploadSuccess: Boolean,
-  newProduct: Object,
-  newCategory: Object,
-  categories: Array,
-});
-
-const emit = defineEmits(["closePopup", "closeAddCategoryPopup", "closeAddProductPopup", "updateFileName", "uploadFile", "addCategory", "addProduct"]);
-const closePopup = () => {
-  emit("closePopup");
-};
-
-const updateFileName = (event) => {
-  emit("updateFileName", event);
-};
-
-const uploadFile = () => {
-  emit("uploadFile");
-};
-
-const addCategory = () => {
-  emit("addCategory");
-};
-
-const addProduct = () => {
-  emit("addProduct");
-};
-
-</script>
 

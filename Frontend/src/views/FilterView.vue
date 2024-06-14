@@ -136,13 +136,14 @@ onMounted(async () => {
         class="produto col-md-3 mb-4"
       >
         <div class="card">
+         <!--<img :src="product.imagemUrl" class="card-img-top img-fluid" :alt="product.nome" />-->
           <img src="@/assets/img/iphome.jpg" class="card-img-top" :alt="product.nome" />
           <div class="card-body">
             <h5 class="card-title">{{ product.nome }}</h5>
             <p class="card-text">Categoria: {{ product.categoria.nome }}</p>
-            <p class="card-text">Quantidade: {{ product.quantidade }}</p>
+            <p class="card-text">Fornecedor: {{ product.fornecedor }}</p>
+            <p class="card-text">Estoque: {{ product.quantidade }}</p>
             <p class="card-text">Preço: R$ {{ product.preco.toFixed(2) }}</p>
-            <p class="card-text">Marca: {{ product.fornecedor }}</p>
           </div>
         </div>
       </div>

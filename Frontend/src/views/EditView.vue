@@ -1,48 +1,46 @@
 <script setup>
-import { ref, onMounted } from "vue";
-import axios from "axios";
-import productService from "@/services/productService.js";
-import categoryService from "@/services/categoryService.js";
+import { ref, onMounted } from 'vue';
+import productService from '@/services/productService';
+import categoryService from '@/services/categoryService';
+import { useRouter, useRoute } from 'vue-router';
 
 const produto = ref({
-  id: "",
-  nome: "",
-  fornecedor: "",
-  preco: "",
-  quantidade: "",
-  categoria: {},
-  descricao: "",
+  id: '',
+  nome: '',
+  fornecedor: '',
+  preco: '',
+  quantidade: '',
+  categoria: {
+    nome: ''
+  },
+  descricao: '',
+  imagemUrl: ''  // Novo campo para URL da imagem
 });
+const erroIdInvalido = ref(false);
+const produtoValido = ref(false);
+const router = useRouter();
+const route = useRoute();
+const categorias = ref([]);
 const salvo = ref(false);
 const erroSalvar = ref(false);
-const produtoValido = ref(false);
-const erroIdInvalido = ref(false);
-const categorias = ref([]);
 
 const getCategorias = async () => {
   try {
     categorias.value = await categoryService.getAll();
   } catch (error) {
-    console.log(error);
+    console.error('Erro ao carregar categorias:', error);
   }
 };
-
-onMounted(() => {
-  getCategorias();
-});
 
 const verificarProduto = async () => {
   try {
     const produtoId = produto.value.id.toString();
-    let response;
-
-    response = await productService.get(produtoId);
-
+    const response = await productService.get(produtoId);
     produto.value = response.data;
     produtoValido.value = true;
     erroIdInvalido.value = false;
   } catch (error) {
-    console.error("Erro ao verificar o produto:", error);
+    console.error('Erro ao verificar o produto:', error);
     produtoValido.value = false;
     erroIdInvalido.value = true;
   }
@@ -58,36 +56,64 @@ const salvarProduto = async () => {
       fornecedor: produto.value.fornecedor,
       quantidade: produto.value.quantidade,
       preco: produto.value.preco,
-      categoriaId: produto.value.categoria.id,
+      categoriaId: categorias.value.find(cat => cat.nome === produto.value.categoria.nome)?.id,
+      imagemUrl: produto.value.imagemUrl  
     };
-    console.log(post);
 
     const response = await productService.update(produtoId, post);
 
     if (response.status === 204 || response.data) {
       salvo.value = true;
       erroSalvar.value = false;
-      console.log("Produto salvo com sucesso.");
+      console.log('Produto salvo com sucesso.');
     } else {
       salvo.value = false;
       erroSalvar.value = true;
-      console.error("Produto não encontrado para salvar.");
+      console.error('Produto não encontrado para salvar.');
     }
   } catch (error) {
     salvo.value = false;
     erroSalvar.value = true;
-    console.error("Erro ao salvar o produto:", error);
+    console.error('Erro ao salvar o produto:', error);
   }
 };
+
+const resetForm = () => {
+  produto.value = {
+    id: '',
+    nome: '',
+    fornecedor: '',
+    preco: '',
+    quantidade: '',
+    categoria: {
+      nome: ''
+    },
+    descricao: '',
+    imagemUrl: ''  
+  };
+  produtoValido.value = false;
+  erroIdInvalido.value = false;
+  salvo.value = false; 
+  erroSalvar.value = false; 
+};
+
+onMounted(() => {
+  const productId = route.params.id;
+  if (productId) {
+    produto.value.id = productId;
+    verificarProduto();
+  }
+  getCategorias();
+});
 </script>
 
 <template>
-  <div class="editar-curso m-4">
-    <h1><i class="fas fa-edit"></i> Editar Produto Produdesk</h1>
+  <div class="editar-curso m-4 position-relative">
+    <h1><i class="fas fa-edit"></i> Editar Produtos</h1>
     <form @submit.prevent="salvarProduto">
       <div class="formulario">
         <div class="form-group">
-          <label for="id-produto">ID do Produto:</label>
+          <label for="id-produto">ID do Produto: {{ produto.id }}</label>
           <div class="input-group">
             <input
               type="number"
@@ -110,6 +136,12 @@ const salvarProduto = async () => {
           >
         </div>
         <div v-if="produtoValido && !erroIdInvalido">
+          <button
+            type="button"
+            class="btn btn-close position-absolute top-0 end-0"
+            @click="resetForm"
+            aria-label="Close"
+          ></button>
           <div class="form-group">
             <label for="nome-produto">Nome do Produto:</label>
             <input
@@ -180,6 +212,21 @@ const salvarProduto = async () => {
               required
             ></textarea>
           </div>
+    
+          <div class="form-group">
+            <label for="imagem-url">URL da Imagem:</label>
+            <input
+              type="text"
+              id="imagem-url"
+              v-model="produto.imagemUrl"
+              class="form-control"
+            />
+          </div>
+       
+          <div class="form-group text-center" v-if="produto.imagemUrl">
+            <label>Pré-visualização da Imagem:</label>
+            <img :src="produto.imagemUrl" alt="Imagem do Produto" class="img-thumbnail img-fluid mx-auto d-block" style="max-width: 300px;" />
+          </div>
           <button type="submit" class="btn btn-primary mt-4">Salvar Alterações</button>
           <div v-if="salvo" id="mensagem-salvo" class="alert alert-success mt-3">
             Salvo com sucesso
@@ -193,5 +240,13 @@ const salvarProduto = async () => {
   </div>
 </template>
 
+<style scoped>
+.editar-curso .formulario {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
 
-<style></style>
+

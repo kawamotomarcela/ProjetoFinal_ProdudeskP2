@@ -17,6 +17,9 @@
                         <router-link to="/filter" class="nav-link text-white">Filter</router-link>
                     </li>
                     <li class="nav-item">
+                        <router-link to="/categorys" class="nav-link text-white">Categorys</router-link>
+                    </li>
+                    <li class="nav-item">
                         <router-link to="/about" class="nav-link text-white">About</router-link>
                     </li>
                 </ul>

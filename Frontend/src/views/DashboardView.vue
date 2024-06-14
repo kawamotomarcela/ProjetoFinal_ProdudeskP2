@@ -3,6 +3,7 @@ import { ref, computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import productService from "../services/productService";
 import categoryService from "../services/categoryService";
+import Cardsinfo from "@/components/Cardsinfo.vue"
 import ProductTable from "@/components/ProductTable.vue";
 import Pagination from "@/components/Pagination.vue";
 import Popup from "@/components/Popup.vue";
@@ -136,22 +137,26 @@ const addProduct = async () => {
     });
     resetNewProduct();
     uploadSuccessProduct.value = true;
-    products.value = await productService.getAll();
+    products.value = await productService.getAll(currentPage.value);
   } catch (error) {
-    console.error("Erro ao cadastrar produtooo:", error);
+    console.error("Erro ao cadastrar produto:", error);
+    console.log(error.response?.data || error.message);
   }
 };
 
 const showRemovePopup = async (productId) => {
   try {
     await productService.remove(productId);
-    products.value = await productService.getAll(1);
-    uploadSuccess.value = true;
   } catch (error) {
-    console.error("Erro ao remover o produto:", error);
+    if (error.response && error.response.status === 404) {
+      console.warn(`Produto com ID ${productId} não encontrado.`);
+    } else {
+      console.error("Erro ao remover o produto:", error);
+    }
+  } finally {
+    products.value = products.value.filter((product) => product.id !== productId);
   }
 };
-
 
 onMounted(async () => {
   try {
@@ -165,31 +170,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="row m-3 mt-2 g-4 dashboard">
-    <div class="col-6 d-flex align-items-center justify-content-center">
-      <div class="dashboard-content m-2">
-        <h4>Welcome Back, Admin</h4>
-        <p class="">Admin Dashboard, Produdesk</p>
-      </div>
-      <div class="">
-        <img
-          src="../assets/img/okuyaso.jpg"
-          class="img-fluid illustration-img"
-          alt="imagem-legal"
-        />
-      </div>
-    </div>
-    <div class="col-6 d-flex align-items-start text-center">
-      <div class="flex-grow-1 m-2">
-        <h4 class="mb-2">$ 78.00</h4>
-        <p class="mb-2">Total Earnings</p>
-        <div class="mb-0">
-          <span class="badge text-success me-2">+9.0%</span>
-          <span class="text-muted">Since Last Month</span>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <Cardsinfo />
 
   <div class="container mt-5">
     <h1 class="mb-4">Gestão de Produtos</h1>

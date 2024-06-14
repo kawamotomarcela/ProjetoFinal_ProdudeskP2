@@ -27,10 +27,8 @@ Status: Em desenvolvimento ⚠️
 </table>
 
 ## Breve descrição projeto 
-Escrever sobre o projeto aqui!
-
-
-
+Desenvolvimento de um sistema de gerenciamento de produtos e categorias utilizando Vue.js para o frontend, integrado com uma API utilizando axios no backend para operações CRUD. 
+O sistema permite adicionar, editar, remover e visualizar produtos e categorias, além de oferecer funcionalidades como contagem de produtos por categoria, edição e gestão de dados.
 
 
 ## Project Setup =)

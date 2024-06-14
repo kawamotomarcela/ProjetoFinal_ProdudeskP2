@@ -21,6 +21,10 @@
                     Edit
                 </router-link>
             </li>
+            <router-link to="/categorys" class="nav-link text-white d-flex align-items-center">
+                    <box-icon name='box' color="#ffffff"  type='solid' class="me-2"></box-icon>
+                    Categorys
+                </router-link>
             <li>
                 <router-link to="/filter" class="nav-link text-white d-flex align-items-center">
                     <box-icon name='filter-alt'color="#ffffff"  type='solid' class="me-2" ></box-icon>
@@ -56,6 +60,7 @@
 </template>
 
 <style scoped>
+
 .box-icon {
     color: white !important; 
 }
