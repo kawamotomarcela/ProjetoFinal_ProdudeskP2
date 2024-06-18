@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\endpoints\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\endpoints\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\endpoints\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\endpoints\\produtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\endpoints\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\endpoints\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|c:\\users\\user\\desktop\\produdesk\\backend\\projetoapi\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A44F16-6B8B-4EA4-A7A0-37B2AFDA0241}|ProjetoAPI\\ProjetoAPI.csproj|solutionrelative:projetoapi\\utils\\listapaginada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -40,13 +40,14 @@
               "RelativeDocumentMoniker": "ProjetoAPI\\Models\\Produto.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Models\\Produto.cs",
               "RelativeToolTip": "ProjetoAPI\\Models\\Produto.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAmwB4AAAANAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAwwG4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:36:47.358Z"
+              "WhenOpened": "2024-06-08T16:36:47.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\appsettings.json",
               "RelativeDocumentMoniker": "ProjetoAPI\\appsettings.json",
@@ -54,12 +55,11 @@
               "RelativeToolTip": "ProjetoAPI\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-03T19:59:38.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T19:59:38.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Categorias.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Endpoints\\Categorias.cs",
               "RelativeDocumentMoniker": "ProjetoAPI\\Endpoints\\Categorias.cs",
@@ -71,19 +71,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Produtos.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Endpoints\\Produtos.cs",
               "RelativeDocumentMoniker": "ProjetoAPI\\Endpoints\\Produtos.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Endpoints\\Produtos.cs",
               "RelativeToolTip": "ProjetoAPI\\Endpoints\\Produtos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJEAAABCAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAACwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T19:29:04.777Z"
+              "WhenOpened": "2024-06-03T19:29:04.777Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ListaPaginada.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Produdesk\\backend\\ProjetoAPI\\Utils\\ListaPaginada.cs",
               "RelativeDocumentMoniker": "ProjetoAPI\\Utils\\ListaPaginada.cs",

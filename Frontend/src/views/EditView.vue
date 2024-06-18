@@ -220,6 +220,7 @@ onMounted(() => {
               id="imagem-url"
               v-model="produto.imagemUrl"
               class="form-control"
+              required
             />
           </div>
        
@@ -229,7 +230,7 @@ onMounted(() => {
           </div>
           <button type="submit" class="btn btn-primary mt-4">Salvar Alterações</button>
           <div v-if="salvo" id="mensagem-salvo" class="alert alert-success mt-3">
-            Salvo com sucesso
+            Salvo com sucesso!
           </div>
           <div v-if="erroSalvar" id="mensagem-erro" class="alert alert-danger mt-3">
             Erro ao salvar o produto. Tente novamente.

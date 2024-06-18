@@ -20,6 +20,7 @@ const newProduct = ref({
   value: "",
   category: null,
   description: "",
+  imageUrl: ""
 });
 
 const newCategory = ref({
@@ -101,7 +102,8 @@ const resetNewProduct = () => {
     stock: "",
     value: "",
     category: null,
-    description: ""
+    description: "",
+    imageUrl: ""
   };
 };
 
@@ -134,6 +136,7 @@ const addProduct = async () => {
       preco: Number(newProduct.value.value),
       categoriaId: newProduct.value.category,
       descricao: newProduct.value.description,
+      imagemUrl: newProduct.value.imageUrl,
     });
     resetNewProduct();
     uploadSuccessProduct.value = true;

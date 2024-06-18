@@ -54,7 +54,6 @@ namespace ProjetoAPI.Endpoints
 
 
 
-            // POST     /produtos
             rotaProdutos.MapPost("/", (ProdutosDbContext dbContext, ProdutoDtoInput produto) =>
             {
                 try
@@ -71,23 +70,24 @@ namespace ProjetoAPI.Endpoints
 
                     return TypedResults.Created($"/produtos/{_novoProduto.Id}", _novoProduto);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    throw new ArgumentException("Ocorreu um erro durante o cadastro do produto.", ex);
+                    throw new ArgumentException("Ocorreu um erro durante o cadastro do produto.");
                 }
             });
+
 
 
             //TESTE
             // POST     /produtos/seed
             rotaProdutos.MapPost("/seed", (ProdutosDbContext dbContext, bool excluirProdutosExistentes = false) =>
             {
-                Produto celular1 = new Produto("Iphone 13" ,"Câmera boa", "Rodrigo", 5, 3000, 2);
-                Produto celular2 = new Produto("Motorola Edge", "Excelente", "Marcelo", 7, 1000, 3);
-                Produto celular3 = new Produto("POCO C65", "Resistente", "André", 4, 2300, 4);
-                Produto celular4 = new Produto("Samsung S10", "Muito bom", "Michel", 8, 2600, 1);
-                Produto celular5 = new Produto("Iphone 15", "Boa qualidade", "Daniel", 7, 5000, 2);
-                Produto celular6 = new Produto("OPPO A79", "Ágil", "Marcus", 6, 1300, 6);
+                Produto celular1 = new Produto("Iphone 13", "Câmera boa", "Rodrigo", 5, 3000, 2, "https://i.pinimg.com/564x/5d/c0/cf/5dc0cf0585fc6242d92b643c54f30476.jpg");
+                Produto celular2 = new Produto("Motorola Edge", "Excelente", "Marcelo", 7, 1000, 3, "https://i.pinimg.com/564x/f6/0b/08/f60b0836963be201c868aaaedff6aa8a.jpg");
+                Produto celular3 = new Produto("POCO C65", "Resistente", "André", 4, 2300, 4, "https://i.pinimg.com/736x/01/83/f6/0183f613616fc9f2f9ee22bc1c059d0c.jpg");
+                Produto celular4 = new Produto("Samsung S10", "Muito bom", "Michel", 8, 2600, 1, "https://i.pinimg.com/564x/b6/5a/5e/b65a5e2d39251bc7eb5c49045da0cba3.jpg");
+                Produto celular5 = new Produto("Iphone 15", "Boa qualidade", "Daniel", 7, 5000, 2, "https://i.pinimg.com/736x/a1/ca/24/a1ca24c04a56dcd7c19dabf9e44c7f7f.jpg");
+                Produto celular6 = new Produto("OPPO A79", "Ágil", "Marcus", 6, 1300, 6, "https://i.pinimg.com/564x/a4/fc/1e/a4fc1e68699d7fab531bd1370e7e14c6.jpg");
 
                 if (excluirProdutosExistentes)
                 {
@@ -125,12 +125,12 @@ namespace ProjetoAPI.Endpoints
 
                     return Results.NoContent();
                 }
-
                 catch (Exception)
                 {
                     throw new ArgumentException("Ocorreu um erro durante a atualização do produto.");
                 }
             });
+
 
             // PUT /produtos/{Id}/atualizar-quantidade
             rotaProdutos.MapPut("/{Id}/atualizar-quantidade", (ProdutosDbContext dbContext, int Id, int novaQuantidade) =>

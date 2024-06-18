@@ -136,8 +136,7 @@ onMounted(async () => {
         class="produto col-md-3 mb-4"
       >
         <div class="card">
-         <!--<img :src="product.imagemUrl" class="card-img-top img-fluid" :alt="product.nome" />-->
-          <img src="@/assets/img/iphome.jpg" class="card-img-top" :alt="product.nome" />
+          <img :src="product.imagemUrl" class="card-img-top img-fluid product-image" :alt="product.nome" />
           <div class="card-body">
             <h5 class="card-title">{{ product.nome }}</h5>
             <p class="card-text">Categoria: {{ product.categoria.nome }}</p>
@@ -152,9 +151,12 @@ onMounted(async () => {
 </template>
 
 <style>
-.produto .card-img-top {
-  max-width: 80%;
-  margin: 0 auto;
-  display: block;
+.product-image {
+  padding: 10px;
+  width: 300px;  
+  height: 200px;  
+  object-fit: cover; 
+  border-radius: 8px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 </style>

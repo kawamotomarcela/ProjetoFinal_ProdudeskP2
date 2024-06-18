@@ -13,10 +13,11 @@ namespace ProjetoAPI.Models
         private string _fornecedor;
         private int _quantidade;
         private double _preco;
+        private string _imagemUrl;
 
         private Produto() { }
 
-        public Produto(string nome, string descricao, string fornecedor, int quantidade, double preco, int categoriaId)
+        public Produto(string nome, string descricao, string fornecedor, int quantidade, double preco, int categoriaId, string imagemUrl)
         {
             Nome = nome;
             Descricao = descricao;
@@ -24,6 +25,7 @@ namespace ProjetoAPI.Models
             Quantidade = quantidade;
             Preco = preco;
             CategoriaId = categoriaId;
+            ImagemUrl = imagemUrl;
         }
 
 
@@ -102,6 +104,19 @@ namespace ProjetoAPI.Models
                         );
                 }
                 _preco = value;
+            }
+        }
+
+        public string ImagemUrl
+        {
+            get => _imagemUrl;
+            set
+            {
+                if (!Uri.IsWellFormedUriString(value, UriKind.Absolute))
+                {
+                    throw new ArgumentException("A URL da imagem não é válida!");
+                }
+                _imagemUrl = value;
             }
         }
 

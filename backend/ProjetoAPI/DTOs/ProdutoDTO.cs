@@ -12,11 +12,11 @@ namespace ProjetoAPI.DTOs
         public double Preco { get; set; }
         public int CategoriaId { get; set; }
 
-
+        public string ImagemUrl {  get; set; }
 
         public Produto ToProduto()
         {
-            return new Produto(Nome, Descricao, Fornecedor, Quantidade, Preco, CategoriaId);
+            return new Produto(Nome, Descricao, Fornecedor, Quantidade, Preco, CategoriaId, ImagemUrl);
         }
     }
 }

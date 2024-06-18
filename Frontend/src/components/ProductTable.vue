@@ -87,7 +87,7 @@ const cancelRemoveProduct = () => {
     <div class="popup-content">
       <p>Tem certeza que deseja remover este produto?</p>
       <div class="popup-buttons">
-        <button @click="removeProductConfirmed" class="btn btn-danger">Confirmar</button>
+        <button @click="removeProductConfirmed" class="btn btn-danger m-2">Confirmar</button>
         <button @click="cancelRemoveProduct" class="btn btn-secondary">Cancelar</button>
       </div>
     </div>
