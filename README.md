@@ -1,10 +1,9 @@
-# frontend
 <h1>Produdesk</h1>
-Status: Em desenvolviment ⚠️
+Status: Em desenvolvimento ⚠️👍
 
 #### Instituição: Unimar
 #### Curso: Analise e Desenvolvimento de Sistemas
-#### Termo: 3°
+#### Termo: 3° B
 
 ## Nomes:
 + Hugo Yudy Hiraishi (1961997)
